@@ -93,3 +93,6 @@ print(1 << 2)
 26
 print('mundo'*3)
 
+27
+variable_prueba='julian'
+print(variable_prueba)
