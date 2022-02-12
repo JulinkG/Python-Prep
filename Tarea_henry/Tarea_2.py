@@ -39,19 +39,43 @@ for i in range(0, n):
     pass
 print(i)
 
-# 6.- Utilizar un ciclo while para realizar el factoreo de un número guardado en una variable, sólo si la variable contiene un número entero mayor a 0
+# 6.- Utilizar un ciclo while para realizar el factorial de un número guardado en una variable, sólo si la variable contiene un número entero mayor a 0
 
-
+n = 2
+if (type(n) == int):
+    if (n > 0):
+        factorial = n
+        while (n > 2):
+            n -= 1
+            factorial = factorial * n
+        print('El factorial es', factorial)
+    else:
+        print('La variable no es mayor a cero')
+else:
+    print('La variable no es un entero')
     
 # 7.- Crear un ciclo for dentro de un ciclo while
 
-
+n = 0
+while(n < 5):
+    n += 1
+    for i in range(1,n):
+        print('Ciclo while nro ' + str(n))
+        print('Ciclo for nro ' + str(i))
 
 # 8.- Crear un ciclo while dentro de un ciclo for
 
-
+n = 5
+for i in range(1, n):
+    while(n < 5):
+        n -= 1
+        print('Ciclo while nro ' + str(n))
+        print('Ciclo for nro ' + str(i))
 
 # 9.- Imprimir los números primos existentes entre 0 y 30
+
+
+
 
 # 10.- ¿Se puede mejorar el proceso del punto 9? Utilizar las sentencias break y/ó continue para tal fin
 
